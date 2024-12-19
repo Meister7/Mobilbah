@@ -55,7 +55,7 @@ const app = express();
 
 const targetUrl = 'https://mobilbah.onrender.com';
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'untitled3')));
 
 app.get('/redirect', async (req, res) => {
   const redirectCondition = false; // Измени это условие в зависимости от логики
