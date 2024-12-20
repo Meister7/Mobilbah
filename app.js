@@ -8,7 +8,7 @@ const targetUrl = 'https://mobilbah.onrender.com';
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', async (req, res) => {
-  res.redirect('/index.html');
+  res.redirect('/game.html');
 });
 
 // Запуск сервера
