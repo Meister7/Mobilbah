@@ -75,9 +75,10 @@ window.addEventListener('DOMContentLoaded', async () => {
         //Контейнер с жизнями
         const livesContainer = new PIXI.Container()
         livesContainer.scale.set(!isLandscape ? aspectRatio * 2 : aspectRatio * 2)
-        livesContainer.y = miss.y / 1.5 + 12
-        livesContainer.x = miss.x + miss.width / 2 + 5
+        livesContainer.y = miss.y + miss.height * 0.1
+        livesContainer.x = miss.x + miss.width * 0.75
         app.stage.addChild(livesContainer)
+
 
         // Количество жизней
         let lives = 3
@@ -85,9 +86,11 @@ window.addEventListener('DOMContentLoaded', async () => {
         function addLives() {
             for (let i = 0; i < lives; i++) {
                 const lifeSprite = new PIXI.Sprite(!isLandscape ? phonesAsset : phonesAsset)
-                lifeSprite.width = miss.width * 0.25
-                lifeSprite.height = miss.height * 1.5
-                lifeSprite.x = i * 30
+                lifeSprite.anchor.set(0.5);
+                lifeSprite.width = !isLandscape ? innerWidth * 0.04 : miss.width * 0.25
+                lifeSprite.height = !isLandscape ? miss.height * 1.2 : miss.height * 1.5
+                lifeSprite.x = i * (lifeSprite.width + 5);
+                lifeSprite.y = 0;
                 livesContainer.addChild(lifeSprite)
                 livesSprite.push(lifeSprite)
             }
@@ -98,7 +101,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         let score = new PIXI.Sprite(!isLandscape ? scoreAsset : scoreAsset)
         score.anchor.set(0.5)
         score.scale.set(!isLandscape ? aspectRatio * 1.6 : aspectRatio * 1.6)
-        score.x = !isLandscape ? innerWidth * 0.17 : innerWidth * 0.85
+        score.x = !isLandscape ? innerWidth * 0.16 : innerWidth * 0.85
         score.y = !isLandscape ? innerHeight * 0.17 : innerHeight * 0.15
         app.stage.addChild(score)
 
@@ -114,7 +117,6 @@ window.addEventListener('DOMContentLoaded', async () => {
         scoreText.x = score.x + score.width / 2 + 5
         scoreText.y = score.y
         app.stage.addChild(scoreText)
-
 
         //Границы игровой зоны
         let gameArea = new PIXI.Sprite(!isLandscape ? backgroundAsset : landscapeBackgroundAsset)
