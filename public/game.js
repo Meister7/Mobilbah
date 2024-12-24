@@ -135,11 +135,11 @@ window.addEventListener('DOMContentLoaded', async () => {
         function spawnTarget(numberOfTargets = 5) {
             if (activeTargets.length > 0) return
 
-            const defaultTexture = window.selectedTexture || phonesAsset;
-            console.log("Selected texture used:", defaultTexture);
+            const selectedTexture = window.selectedTexture || phonesAsset;
+            console.log("Selected texture used:", selectedTexture);
 
             const targetTextures = [
-                defaultTexture,
+                selectedTexture,
                 crackedPhoneAsset,
                 brokenPhoneAsset
             ];
