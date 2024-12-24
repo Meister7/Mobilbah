@@ -135,7 +135,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         function spawnTarget(numberOfTargets = 5) {
             if (activeTargets.length > 0) return
 
-            const selectedTexture = window.selectedTexture || phonesAsset;
+            const selectedTexture = window.selectedTexture
             console.log("Selected texture used:", selectedTexture);
 
             const targetTextures = [
