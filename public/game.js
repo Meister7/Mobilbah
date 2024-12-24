@@ -201,6 +201,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
                     //Мишень уничтожается после 3 нажатий
                     if (target.clickCount >= 3) {
+                        Sound.playBreakSound()
                         target.destroy();
                         const index = activeTargets.indexOf(target);
                         if (index > -1) activeTargets.splice(index, 1)
@@ -208,7 +209,6 @@ window.addEventListener('DOMContentLoaded', async () => {
                         scoreCounter += 10
                         scoreText.text = scoreCounter.toString()
                     }
-                    Sound.playBreakSound()
                 })
             }
         }
@@ -294,5 +294,4 @@ window.addEventListener('DOMContentLoaded', async () => {
         app.renderer.resize(window.innerWidth, window.innerHeight)
         makeLayout()
     })
-    // Sound.startBackgroundMusic()
 })
