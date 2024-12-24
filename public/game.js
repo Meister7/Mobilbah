@@ -1,4 +1,5 @@
 import * as PIXI from './pixi.mjs'
+import * as Sound from './Sound.js'
 
 window.addEventListener('DOMContentLoaded', async () => {
     const app = new PIXI.Application()
@@ -135,7 +136,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         function spawnTarget(numberOfTargets = 5) {
             if (activeTargets.length > 0) return
 
-            const selectedTexture = window.selectedTexture
+            const selectedTexture = window.selectedTexture || phonesAsset
             console.log("Selected texture used:", selectedTexture);
 
             const targetTextures = [
@@ -204,6 +205,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                         const index = activeTargets.indexOf(target);
                         if (index > -1) activeTargets.splice(index, 1)
 
+                        Sound.playBreakSound()
                         scoreCounter += 10
                         scoreText.text = scoreCounter.toString()
                     }
@@ -213,6 +215,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         function showGameOver() {
             //Игра законцена
             isGameOver = true
+
+            Sound.playGameOverSound()
 
             const gameOver = new PIXI.Sprite(gameOverAsset)
             const isLandscape = innerWidth > innerHeight
@@ -290,5 +294,5 @@ window.addEventListener('DOMContentLoaded', async () => {
         app.renderer.resize(window.innerWidth, window.innerHeight)
         makeLayout()
     })
-
+    Sound.startBackgroundMusic()
 })
