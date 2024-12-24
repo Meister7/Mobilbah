@@ -108,6 +108,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         //Счетчик очков(сам счетчик)
         let scoreCounter = 0
+        scoreCounter.fontFamily = 'SF Pro Rounded'
         const scoreText = new PIXI.Text(scoreCounter.toString(), {
             fill: 0xffffff,
             fontFamily: 'SF Pro Rounded',
@@ -201,7 +202,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 
                     //Мишень уничтожается после 3 нажатий
                     if (target.clickCount >= 3) {
-                        Sound.playBreakSound()
                         target.destroy();
                         const index = activeTargets.indexOf(target);
                         if (index > -1) activeTargets.splice(index, 1)
@@ -256,6 +256,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             } else {
                 clearInterval(timerInterval)
                 timerText.text = '0:00'
+                timerText.text.fontFamily = 'SF Pro Rounded'
                 showGameOver()
             }
         }, 1000);
