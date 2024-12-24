@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="721d8856-3c22-4aa1-a33b-ac72fb31e3cf" name="Changes" comment="Mobilbah Game">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +122,7 @@
       <workItem from="1734933530926" duration="93000" />
       <workItem from="1734933746958" duration="11090000" />
       <workItem from="1735040124698" duration="4371000" />
-      <workItem from="1735048242876" duration="1287000" />
+      <workItem from="1735048242876" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="Mobilbah Game">
       <option name="closed" value="true" />

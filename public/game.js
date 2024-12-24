@@ -108,7 +108,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         //Счетчик очков(сам счетчик)
         let scoreCounter = 0
-        scoreCounter.fontFamily = 'SF Pro Rounded'
         const scoreText = new PIXI.Text(scoreCounter.toString(), {
             fill: 0xffffff,
             fontFamily: 'SF Pro Rounded',
