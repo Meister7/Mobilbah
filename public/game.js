@@ -132,17 +132,17 @@ window.addEventListener('DOMContentLoaded', async () => {
         let activeTargets = []
 
         // Функция отвечающая за появление мишеней
-        function spawnTarget(numberOfTargets = 5) {
+        function spawnTarget(numberOfTargets = 5, defaultTexture = phonesAsset) {
             if (activeTargets.length > 0) return
 
             const targetTextures = [
-                phonesAsset,
+                defaultTexture,
                 crackedPhoneAsset,
                 brokenPhoneAsset
             ];
 
             for (let i = 0; i < numberOfTargets; i++) {
-                const target = new PIXI.Sprite(phonesAsset)
+                const target = new PIXI.Sprite(targetTextures[0])
                 target.scale.set(!isLandscape ? aspectRatio * 2 : aspectRatio * 1.6)
                 target.width = !isLandscape ? innerWidth * 0.065 : innerWidth * 0.04
                 target.height = !isLandscape ? innerHeight * 0.075 :innerHeight * 0.15
@@ -286,4 +286,9 @@ window.addEventListener('DOMContentLoaded', async () => {
         app.renderer.resize(window.innerWidth, window.innerHeight)
         makeLayout()
     })
+
+    document.getElementById('play').addEventListener('click', () => {
+        const defaultTexture = window.selectedTexture || phonesAsset; // Get selected texture or use default
+        spawnTarget(5, defaultTexture);
+    });
 })
