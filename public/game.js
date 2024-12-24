@@ -205,10 +205,10 @@ window.addEventListener('DOMContentLoaded', async () => {
                         const index = activeTargets.indexOf(target);
                         if (index > -1) activeTargets.splice(index, 1)
 
-                        Sound.playBreakSound()
                         scoreCounter += 10
                         scoreText.text = scoreCounter.toString()
                     }
+                    Sound.playBreakSound()
                 })
             }
         }
@@ -294,5 +294,5 @@ window.addEventListener('DOMContentLoaded', async () => {
         app.renderer.resize(window.innerWidth, window.innerHeight)
         makeLayout()
     })
-    Sound.startBackgroundMusic()
+    // Sound.startBackgroundMusic()
 })
