@@ -132,8 +132,11 @@ window.addEventListener('DOMContentLoaded', async () => {
         let activeTargets = []
 
         // Функция отвечающая за появление мишеней
-        function spawnTarget(numberOfTargets = 5, defaultTexture = phonesAsset) {
+        function spawnTarget(numberOfTargets = 5) {
             if (activeTargets.length > 0) return
+
+            const defaultTexture = window.selectedTexture || phonesAsset;
+            console.log("Selected texture used:", defaultTexture);
 
             const targetTextures = [
                 defaultTexture,
@@ -186,6 +189,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                         target.vy *= -1; // Reverse vertical velocity if hitting top or bottom boundary
                     }
                 })
+
 
                 //Функция отвечающая за уничтожение мешеней
                 target.on('pointerdown', () => {
@@ -287,8 +291,4 @@ window.addEventListener('DOMContentLoaded', async () => {
         makeLayout()
     })
 
-    document.getElementById('play').addEventListener('click', () => {
-        const defaultTexture = window.selectedTexture || phonesAsset; // Get selected texture or use default
-        spawnTarget(5, defaultTexture);
-    });
 })
