@@ -30,6 +30,8 @@ window.addEventListener('DOMContentLoaded', async () => {
         const isLandscape = innerWidth > innerHeight
         let aspectRatio = isLandscape ? innerHeight / innerWidth : innerWidth / innerHeight
 
+        Sound.toggleMuteState()
+
         //Задний фон
         let background = new PIXI.Sprite(!isLandscape ? backgroundAsset : landscapeBackgroundAsset)
         background.anchor.set(0.5)
