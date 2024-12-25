@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721d8856-3c22-4aa1-a33b-ac72fb31e3cf" name="Changes" comment="Mobilbah Game">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="721d8856-3c22-4aa1-a33b-ac72fb31e3cf" name="Changes" comment="Mobilbah Game" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -124,7 +122,7 @@
       <workItem from="1735040124698" duration="4371000" />
       <workItem from="1735048242876" duration="2756000" />
       <workItem from="1735112926295" duration="5916000" />
-      <workItem from="1735139494860" duration="1032000" />
+      <workItem from="1735139494860" duration="1354000" />
     </task>
     <task id="LOCAL-00001" summary="Mobilbah Game">
       <option name="closed" value="true" />

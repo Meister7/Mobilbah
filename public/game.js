@@ -219,9 +219,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 
             Sound.playGameOverSound()
 
-            const gameOverContainer = new PIXI.Container();
-            app.stage.addChild(gameOverContainer);
-
             const gameOver = new PIXI.Sprite(gameOverAsset)
             const isLandscape = innerWidth > innerHeight
             let aspectRatio = isLandscape ? innerHeight / innerWidth : innerWidth / innerHeight
@@ -229,7 +226,7 @@ window.addEventListener('DOMContentLoaded', async () => {
             gameOver.scale.set(aspectRatio)
             gameOver.x = innerWidth / 2
             gameOver.y = innerHeight / 2 - 100
-            gameOverContainer.stage.addChild(gameOver)
+            app.stage.addChild(gameOver)
 
             gameOver.interactive = true
             gameOver.buttonMode = true
