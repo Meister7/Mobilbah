@@ -1,10 +1,13 @@
 function getQueryParameter(key) {
 	const queryParams = new URLSearchParams(window.location.search);
 	console.log(queryParams);
+
 	return queryParams.get(key);
 }
 
 export let isMuted = getQueryParameter('isMuted') === 'true';
+console.log("window.location.search:", window.location.search);
+console.log("Extracted isMuted:", getQueryParameter('isMuted'));
 
 export const gameBackgroundMusic = new Audio('./assets/music/backgroundMusic.mp3');
 gameBackgroundMusic.loop = true;
