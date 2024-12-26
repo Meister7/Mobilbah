@@ -35,6 +35,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         //Задний фон
         let background = new PIXI.Sprite(!isLandscape ? backgroundAsset : landscapeBackgroundAsset)
         background.anchor.set(0.5)
+        background.scale.set(aspectRatio)
         background.width = innerWidth
         background.height = innerHeight
         background.x = innerWidth / 2
