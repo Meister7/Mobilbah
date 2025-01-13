@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721d8856-3c22-4aa1-a33b-ac72fb31e3cf" name="Changes" comment="Mobilbah Game">
+    <list default="true" id="721d8856-3c22-4aa1-a33b-ac72fb31e3cf" name="Changes" comment="new design">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Sound.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Sound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/gameOver.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/img_6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/landscapeBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/landscapeLine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/miss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/score.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/time.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile1_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile1_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile2_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile3_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/typeMobile3_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +23,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Meister7"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Meister7/Mobilbah",
+    "accountId": "10d5e243-71f6-4d2f-87c0-677c549f7db5"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -146,7 +139,7 @@
       <workItem from="1735139494860" duration="2321000" />
       <workItem from="1735223589419" duration="3733000" />
       <workItem from="1735481536773" duration="623000" />
-      <workItem from="1736757911737" duration="1891000" />
+      <workItem from="1736757911737" duration="3157000" />
     </task>
     <task id="LOCAL-00001" summary="Mobilbah Game">
       <option name="closed" value="true" />
@@ -156,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734545664308</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new design">
+      <option name="closed" value="true" />
+      <created>1736760375050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736760375050</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new design">
+      <option name="closed" value="true" />
+      <created>1736760387126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736760387126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +173,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mobilbah Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mobilbah Game" />
+    <MESSAGE value="new design" />
+    <option name="LAST_COMMIT_MESSAGE" value="new design" />
   </component>
 </project>
