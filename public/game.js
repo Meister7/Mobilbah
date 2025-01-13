@@ -73,7 +73,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         let miss = new PIXI.Sprite(!isLandscape ? missAsset : missAsset)
         miss.anchor.set(0.5)
         miss.scale.set(!isLandscape ? aspectRatio * 1.6 : aspectRatio * 1.6)
-        miss.x = !isLandscape ? innerWidth * 0.16 : innerWidth / 2
+        miss.x = !isLandscape ? innerWidth * 0.25 : innerWidth / 2
         miss.y = !isLandscape ? innerHeight * 0.11 : innerHeight * 0.15
         app.stage.addChild(miss)
 
