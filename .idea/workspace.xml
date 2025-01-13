@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="721d8856-3c22-4aa1-a33b-ac72fb31e3cf" name="Changes" comment="layout" />
+    <list default="true" id="721d8856-3c22-4aa1-a33b-ac72fb31e3cf" name="Changes" comment="layout 3">
+      <change beforePath="$PROJECT_DIR$/public/game.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/game.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,7 +142,7 @@
       <workItem from="1736757911737" duration="4115000" />
       <workItem from="1736779644048" duration="109000" />
       <workItem from="1736779757414" duration="1256000" />
-      <workItem from="1736787911829" duration="347000" />
+      <workItem from="1736787911829" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="Mobilbah Game">
       <option name="closed" value="true" />
@@ -190,7 +192,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736788034598</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="layout 2">
+      <option name="closed" value="true" />
+      <created>1736788353068</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736788353068</updated>
+    </task>
+    <task id="LOCAL-00008" summary="layout 3">
+      <option name="closed" value="true" />
+      <created>1736788494782</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736788494782</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +220,8 @@
     <MESSAGE value="typeMobile" />
     <MESSAGE value="color" />
     <MESSAGE value="layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="layout" />
+    <MESSAGE value="layout 2" />
+    <MESSAGE value="layout 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="layout 3" />
   </component>
 </project>
