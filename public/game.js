@@ -19,7 +19,6 @@ window.addEventListener('DOMContentLoaded', async () => {
     const landscapeLineAsset = await PIXI.Assets.load("./assets/landscapeLine.png")
     const phonesAsset = await PIXI.Assets.load("./assets/typeMobile1.png")
     const crackedPhoneAsset = await PIXI.Assets.load("./assets/typeMobile1_2.png")
-    const brokenPhoneAsset = await PIXI.Assets.load("./assets/typeMobile1_3.png")
     const timeAsset = await  PIXI.Assets.load("./assets/time.png")
     const missAsset = await PIXI.Assets.load("./assets/miss.png")
     const scoreAsset = await PIXI.Assets.load("./assets/score.png")
@@ -147,7 +146,6 @@ window.addEventListener('DOMContentLoaded', async () => {
             const targetTextures = [
                 selectedTexture,
                 crackedPhoneAsset,
-                brokenPhoneAsset
             ];
 
             for (let i = 0; i < numberOfTargets; i++) {
@@ -205,7 +203,7 @@ window.addEventListener('DOMContentLoaded', async () => {
                     }
 
                     //Мишень уничтожается после 3 нажатий
-                    if (target.clickCount >= 3) {
+                    if (target.clickCount >= 2) {
                         target.destroy();
                         const index = activeTargets.indexOf(target);
                         if (index > -1) activeTargets.splice(index, 1)

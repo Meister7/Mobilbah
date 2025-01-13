@@ -44,7 +44,7 @@ export function toggleMuteState() {
 	if (isMuted) {
 		gameBackgroundMusic.pause();
 	} else {
-		gameBackgroundMusic.play();
+		gameBackgroundMusic.pause();
 	}
 }
 
