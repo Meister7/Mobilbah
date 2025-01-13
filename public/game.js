@@ -59,7 +59,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         //Таймер(текст)
         let timerText = new PIXI.Text("1:00", {
-            fill: 0xffffff,
+            fill: 0x010101,
             fontFamily: 'SF Pro Rounded',
             fontSize: '32'
         });
@@ -113,7 +113,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         //Счетчик очков(сам счетчик)
         let scoreCounter = 0
         const scoreText = new PIXI.Text(scoreCounter.toString(), {
-            fill: 0xffffff,
+            fill: 0x010101,
             fontFamily: 'SF Pro Rounded',
             fontSize: '32'
         })
