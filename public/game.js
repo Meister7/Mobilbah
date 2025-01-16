@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         let time = new PIXI.Sprite(!isLandscape ? timeAsset : timeAsset)
         time.anchor.set(0.5)
         time.scale.set(!isLandscape ? aspectRatio * 1.6 : aspectRatio * 1.6)
-        time.x = !isLandscape ? innerWidth * 0.5 : innerWidth * 0.08
+        time.x = !isLandscape ? innerWidth * 0.3 : innerWidth * 0.08
         time.y = !isLandscape ? innerHeight * 0.05 : innerHeight * 0.15
         app.stage.addChild(time)
 
@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         });
         timerText.anchor.set(0, 0.5)
         timerText.scale.set(!isLandscape ? aspectRatio * 2 : aspectRatio * 2)
-        timerText.x = time.x + time.width * 0.1
+        timerText.x = time.x + (time.width / 2) + 10
         timerText.y = time.y
         app.stage.addChild(timerText)
 
@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         let score = new PIXI.Sprite(!isLandscape ? scoreAsset : scoreAsset)
         score.anchor.set(0.5)
         score.scale.set(!isLandscape ? aspectRatio * 1.6 : aspectRatio * 1.6)
-        score.x = !isLandscape ? innerWidth * 0.5 : innerWidth * 0.85
+        score.x = !isLandscape ? innerWidth * 0.4 : innerWidth * 0.85
         score.y = !isLandscape ? innerHeight * 0.17 : innerHeight * 0.15
         app.stage.addChild(score)
 
@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         })
         scoreText.anchor.set(0, 0.5)
         scoreText.scale.set(!isLandscape ? aspectRatio * 2 : aspectRatio * 2)
-        scoreText.x = score.x + score.width * 0.1
+        scoreText.x = score.x + (score.width / 2) + 10
         scoreText.y = score.y
         app.stage.addChild(scoreText)
 
