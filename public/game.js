@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         });
         timerText.anchor.set(0, 0.5)
         timerText.scale.set(!isLandscape ? aspectRatio * 2 : aspectRatio * 2)
-        timerText.x = time.x + time.width / 2 + 5
+        timerText.x = time.x + time.width * 0.1
         timerText.y = time.y
         app.stage.addChild(timerText)
 
@@ -119,7 +119,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         })
         scoreText.anchor.set(0, 0.5)
         scoreText.scale.set(!isLandscape ? aspectRatio * 2 : aspectRatio * 2)
-        scoreText.x = score.x + score.width / 2 + 5
+        scoreText.x = score.x + score.width * 0.1
         scoreText.y = score.y
         app.stage.addChild(scoreText)
 
