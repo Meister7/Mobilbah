@@ -53,7 +53,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         let time = new PIXI.Sprite(!isLandscape ? timeAsset : timeAsset)
         time.anchor.set(0.5)
         time.scale.set(!isLandscape ? aspectRatio * 1.6 : aspectRatio * 1.6)
-        time.x = !isLandscape ? innerWidth * 0.44 : innerWidth * 0.08
+        time.x = !isLandscape ? innerWidth * 0.38 : innerWidth * 0.08
         time.y = !isLandscape ? innerHeight * 0.05 : innerHeight * 0.15
         app.stage.addChild(time)
 
